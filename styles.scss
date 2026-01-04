@@ -11,20 +11,21 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--bg-primary);
+  scroll-behavior: smooth;
 }
 
-:root{
+:root {
   // Text Color
-  --text-primary:#F4F2ED;
-  --text-secondary: #71706E;
-  
+  --text-primary: #f4f2ed;
+  --text-secondary: #71706e;
+
   // BackGrounf Color
   --bg-primary: #121212;
-  --bg-secondary: #1E1E1E;
-  --bg-yellow: #AE9E4A;
+  --bg-secondary: #1e1e1e;
+  --bg-yellow: #ae9e4a;
 }
 
-@mixin flex-direction(){
+@mixin flex-direction() {
   width: 100%;
   max-width: 1600px;
   display: flex;
@@ -38,7 +39,7 @@ main {
   gap: 2rem;
 
   // Section 0
-  
+
   section.view0 {
     width: 100%;
     display: flex;
@@ -52,62 +53,71 @@ main {
       font-weight: 400;
       font-size: 1.2rem;
       letter-spacing: 1.5px;
+      text-transform: uppercase;
     }
     .right {
       display: flex;
-      gap: .7rem;
-      button.btn1{
+      gap: 0.7rem;
+      button.btn1 {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding: .6rem;
+        padding: 0.6rem;
         border-radius: 10px;
         border: 1px solid var(--bg-secondary);
         background-color: var(--bg-secondary);
         text-transform: uppercase;
-        gap: .7rem;
+        gap: 0.7rem;
         font-size: 1rem;
         color: var(--text-primary);
-        i{
+        i {
           font-size: 1.5rem;
           color: var(--bg-yellow);
         }
+        a {
+          text-decoration: none;
+          color: var(--text-primary);
+        }
       }
 
-      button.btn2{
+      button.btn2 {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding: .4rem .9rem;
+        padding: 0.4rem 0.9rem;
         border-radius: 10px;
         border: 1px solid var(--bg-secondary);
         background-color: var(--bg-secondary);
         gap: 1rem;
         font-size: 1rem;
-        i{
+        i {
           font-size: 2rem;
           color: var(--text-primary);
         }
       }
 
-      button.btn3{
+      button.btn3 {
         display: none;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding: .6rem;
+        padding: 0.6rem;
         border-radius: 10px;
         border: 1px solid var(--bg-secondary);
         background-color: var(--bg-secondary);
         text-transform: uppercase;
-        gap: .7rem;
+        gap: 0.7rem;
         font-size: 1rem;
         color: var(--text-primary);
-        i{
+        i {
           font-size: 1.5rem;
           color: var(--bg-yellow);
+        }
+        a {
+          text-decoration: none;
+          color: var(--text-primary);
         }
       }
     }
@@ -136,6 +146,7 @@ main {
       background-color: var(--bg-secondary);
       padding: 1.5rem;
       border-radius: 1rem;
+      text-transform: uppercase;
 
       h3 {
         font-size: 1rem;
@@ -347,6 +358,7 @@ main {
       border-radius: 10px;
 
       img {
+        position: relative;
         width: 100%;
         object-fit: cover;
         border-radius: 10px;
@@ -384,7 +396,7 @@ main {
       flex-direction: column;
       justify-content: space-between;
       aspect-ratio: 1/1;
-      background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp);
+      background-image: url(/Ranjan\ Choudhary.jpg);
       background-size: cover;
       border-radius: 10px;
       opacity: 0.7;
@@ -394,7 +406,7 @@ main {
       flex-direction: column;
       justify-content: space-between;
       aspect-ratio: 1/1;
-      background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp);
+      background-image: url(/Meerak\ Subba.jpg);
       background-size: cover;
       border-radius: 10px;
       opacity: 0.6;
@@ -404,7 +416,18 @@ main {
       flex-direction: column;
       justify-content: space-between;
       aspect-ratio: 1/1;
-      background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp);
+      background-image: url(/Jaydip\ Shelke.jpg);
+      background-size: cover;
+      border-radius: 10px;
+      opacity: 0.7;
+    }
+
+    .card4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      aspect-ratio: 1/1;
+      background-image: url(/Amol\ Shinde.png);
       background-size: cover;
       border-radius: 10px;
       opacity: 0.7;
@@ -445,21 +468,21 @@ main {
         border-radius: 10px;
         backdrop-filter: blur(10px);
         text-transform: uppercase;
-        color: var(--text-primary);
+        color: var(--bg-primary);
         border: 1px solid var(--text-secondary);
 
         h1 {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           display: flex;
           justify-content: flex-start;
           align-items: flex-start;
-          font-weight: 200;
+          font-weight: 400;
         }
 
         h2 {
           justify-content: flex-end;
           align-items: flex-end;
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-weight: 400;
         }
       }
@@ -493,7 +516,6 @@ main {
 
       .Head-text {
         padding: 0 1.5rem;
-        text-transform: uppercase;
 
         h1 {
           letter-spacing: 1px;
@@ -586,6 +608,11 @@ main {
         background-color: var(--bg-primary);
         border: 1px solid var(--bg-primary);
         color: var(--text-primary);
+
+        a {
+          text-decoration: none;
+          color: var(--text-primary);
+        }
       }
     }
   }
@@ -601,6 +628,7 @@ main {
       @include flex-direction();
       background-color: var(--bg-secondary);
       justify-content: space-between;
+      text-transform: uppercase;
       .top {
         padding: 1rem;
         gap: 3rem;
@@ -660,6 +688,7 @@ main {
           text-transform: uppercase;
           border-radius: 10px;
           letter-spacing: 1px;
+          border: 1px solid var(--bg-yellow);
         }
       }
 
@@ -731,7 +760,7 @@ main {
           background-color: var(--bg-secondary);
           border: 1px solid var(--text-secondary);
           color: var(--bg-secondary);
-          i{
+          i {
             color: var(--text-primary);
           }
         }
@@ -740,24 +769,28 @@ main {
   }
 }
 
+// Desktop View
+
 @media (min-width: 900px) {
   main {
     flex-direction: row;
     gap: 1rem;
 
-    section.view0{
+    section.view0 {
       display: flex;
       padding-bottom: 1rem;
 
-      .left{
-        padding: .4rem 1rem;
+      .left {
+        padding: 0.4rem 1rem;
       }
-      .right{
-        button.btn3, button.btn2, button.btn1{
+      .right {
+        button.btn3,
+        button.btn2,
+        button.btn1 {
           display: block;
-          padding: .4rem 1.4rem;
+          padding: 0.4rem 1.4rem;
           font-weight: 500;
-          font-size: .8rem;
+          font-size: 0.8rem;
           letter-spacing: 1px;
         }
       }
@@ -958,8 +991,9 @@ main {
 
       .card1,
       .card2,
-      .card3 {
-        width: 100%;
+      .card3,
+      .card4 {
+        width: 80%;
       }
     }
 
@@ -976,7 +1010,7 @@ main {
 
         .Head-text {
           h1 {
-            font-size: 3rem;
+            font-size: 2.4rem;
             letter-spacing: 2px;
             line-height: 3.4rem;
             font-weight: 400;

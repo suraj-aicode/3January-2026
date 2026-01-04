@@ -10,14 +10,15 @@ body {
   width: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--bg-primary);
+  scroll-behavior: smooth;
 }
 
 :root {
-  --text-primary:#F4F2ED;
-  --text-secondary: #71706E;
+  --text-primary: #f4f2ed;
+  --text-secondary: #71706e;
   --bg-primary: #121212;
-  --bg-secondary: #1E1E1E;
-  --bg-yellow: #AE9E4A;
+  --bg-secondary: #1e1e1e;
+  --bg-yellow: #ae9e4a;
 }
 
 main {
@@ -39,6 +40,7 @@ main section.view0 .left h1 {
   font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 main section.view0 .right {
   display: flex;
@@ -61,6 +63,10 @@ main section.view0 .right button.btn1 {
 main section.view0 .right button.btn1 i {
   font-size: 1.5rem;
   color: var(--bg-yellow);
+}
+main section.view0 .right button.btn1 a {
+  text-decoration: none;
+  color: var(--text-primary);
 }
 main section.view0 .right button.btn2 {
   display: flex;
@@ -96,6 +102,10 @@ main section.view0 .right button.btn3 i {
   font-size: 1.5rem;
   color: var(--bg-yellow);
 }
+main section.view0 .right button.btn3 a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
 main section.view1 {
   width: 100%;
   max-width: 1600px;
@@ -120,6 +130,7 @@ main section.view1 .bottom {
   background-color: var(--bg-secondary);
   padding: 1.5rem;
   border-radius: 1rem;
+  text-transform: uppercase;
 }
 main section.view1 .bottom h3 {
   font-size: 1rem;
@@ -302,6 +313,7 @@ main section.view4 .bottom {
   border-radius: 10px;
 }
 main section.view4 .bottom img {
+  position: relative;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -340,7 +352,7 @@ main section.view6 .card1 {
   flex-direction: column;
   justify-content: space-between;
   aspect-ratio: 1/1;
-  background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp);
+  background-image: url(/Ranjan\ Choudhary.jpg);
   background-size: cover;
   border-radius: 10px;
   opacity: 0.7;
@@ -350,7 +362,7 @@ main section.view6 .card2 {
   flex-direction: column;
   justify-content: space-between;
   aspect-ratio: 1/1;
-  background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp);
+  background-image: url(/Meerak\ Subba.jpg);
   background-size: cover;
   border-radius: 10px;
   opacity: 0.6;
@@ -360,7 +372,17 @@ main section.view6 .card3 {
   flex-direction: column;
   justify-content: space-between;
   aspect-ratio: 1/1;
-  background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp);
+  background-image: url(/Jaydip\ Shelke.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+main section.view6 .card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 1/1;
+  background-image: url(/Amol\ Shinde.png);
   background-size: cover;
   border-radius: 10px;
   opacity: 0.7;
@@ -398,20 +420,20 @@ main section.view6 .bottom .text {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   text-transform: uppercase;
-  color: var(--text-primary);
+  color: var(--bg-primary);
   border: 1px solid var(--text-secondary);
 }
 main section.view6 .bottom .text h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-weight: 200;
+  font-weight: 400;
 }
 main section.view6 .bottom .text h2 {
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 main section.view7 {
@@ -439,7 +461,6 @@ main section.view7 .top h4 {
 }
 main section.view7 .top .Head-text {
   padding: 0 1.5rem;
-  text-transform: uppercase;
 }
 main section.view7 .top .Head-text h1 {
   letter-spacing: 1px;
@@ -527,6 +548,10 @@ main section.view8 .bottom button {
   border: 1px solid var(--bg-primary);
   color: var(--text-primary);
 }
+main section.view8 .bottom button a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
 main section.mega {
   width: 100%;
   max-width: 1600px;
@@ -544,6 +569,7 @@ main section.mega section.view9 {
   border-radius: 10px;
   background-color: var(--bg-secondary);
   justify-content: space-between;
+  text-transform: uppercase;
 }
 main section.mega section.view9 .top {
   padding: 1rem;
@@ -601,6 +627,7 @@ main section.mega section.view10 .text button {
   text-transform: uppercase;
   border-radius: 10px;
   letter-spacing: 1px;
+  border: 1px solid var(--bg-yellow);
 }
 main section.mega section.view10 h1 {
   font-size: 1.2rem;
@@ -684,7 +711,9 @@ main section.mega section.view11 .bottom button i {
   main section.view0 .left {
     padding: 0.4rem 1rem;
   }
-  main section.view0 .right button.btn3, main section.view0 .right button.btn2, main section.view0 .right button.btn1 {
+  main section.view0 .right button.btn3,
+  main section.view0 .right button.btn2,
+  main section.view0 .right button.btn1 {
     display: block;
     padding: 0.4rem 1.4rem;
     font-weight: 500;
@@ -861,8 +890,9 @@ main section.mega section.view11 .bottom button i {
   }
   main section.view6 .card1,
   main section.view6 .card2,
-  main section.view6 .card3 {
-    width: 100%;
+  main section.view6 .card3,
+  main section.view6 .card4 {
+    width: 80%;
   }
   main section.view7 {
     display: flex;
@@ -876,7 +906,7 @@ main section.mega section.view11 .bottom button i {
     justify-content: space-between;
   }
   main section.view7 .top .Head-text h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     letter-spacing: 2px;
     line-height: 3.4rem;
     font-weight: 400;
