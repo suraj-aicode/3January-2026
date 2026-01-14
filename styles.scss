@@ -516,6 +516,8 @@ main {
 
       .Head-text {
         padding: 0 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
 
         h1 {
           letter-spacing: 1px;
@@ -523,6 +525,7 @@ main {
           line-height: 38px;
           color: var(--text-primary);
           padding-top: 1rem;
+          font-size: 1.6rem;
         }
       }
 
