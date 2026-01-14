@@ -461,6 +461,8 @@ main section.view7 .top h4 {
 }
 main section.view7 .top .Head-text {
   padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 main section.view7 .top .Head-text h1 {
   letter-spacing: 1px;
@@ -468,6 +470,7 @@ main section.view7 .top .Head-text h1 {
   line-height: 38px;
   color: var(--text-primary);
   padding-top: 1rem;
+  font-size: 1.6rem;
 }
 main section.view7 .top .text {
   padding: 1.5rem;
